@@ -3,10 +3,7 @@ import { Movie, TopMovie } from "./components/Movie";
 import Search from "./components/Search";
 import type { IAppwriteTopMovie, IMovie } from "./interface/Movie";
 import { useDebounce } from "react-use";
-import {
-  getTrendingMovies,
-  updateSearchCount,
-} from "./assets/services/appwrite";
+import { getTrendingMovies, updateSearchCount } from "./services/appwrite";
 
 const TMDB_BASE_URL = import.meta.env.VITE_TMDB_BASE_URL;
 const TMDB_API_READ_ACCESS_TOKEN = import.meta.env

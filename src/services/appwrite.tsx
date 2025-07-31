@@ -1,6 +1,6 @@
 import { Client, Databases, ID, Query } from "appwrite";
-import type { IAppwriteTopMovie, IMovie } from "../../interface/Movie";
-import { transformGetAppwriteMovies } from "../../transformers/movie-transformer";
+import type { IAppwriteTopMovie, IMovie } from "../interface/Movie";
+import { transformGetAppwriteMovies } from "../transformers/movie-transformer";
 
 const PROJECT_ID = import.meta.env.VITE_APPWRITE_PROJECT_ID;
 const DATABASE_ID = import.meta.env.VITE_APPWRITE_DATABASE_ID;
