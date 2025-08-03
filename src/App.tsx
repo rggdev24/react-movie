@@ -64,7 +64,7 @@ function App() {
   return (
     <main>
       <div>
-        <header className="text-3xl">Top Movies</header>
+        <header className="text-3xl">Top Movies 2</header>
 
         {topMovies.map((movie: IAppwriteTopMovie) => (
           <TopMovie key={movie.movie_id} movie={movie} />
