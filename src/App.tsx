@@ -4,6 +4,7 @@ import Search from "./components/Search";
 import type { IAppwriteTopMovie, IMovie } from "./interface/Movie";
 import { useDebounce } from "react-use";
 import { getTrendingMovies, updateSearchCount } from "./services/appwrite";
+import { TodoMain } from "./components/Todo/TodoMain";
 
 const TMDB_BASE_URL = import.meta.env.VITE_TMDB_BASE_URL;
 const TMDB_API_READ_ACCESS_TOKEN = import.meta.env
@@ -63,7 +64,8 @@ function App() {
 
   return (
     <main>
-      <div>
+      <TodoMain />
+      {/* <div>
         <header className="text-3xl">Top Movies 2</header>
 
         {topMovies.map((movie: IAppwriteTopMovie) => (
@@ -81,7 +83,7 @@ function App() {
 
       {movieList.map((movie: IMovie) => (
         <Movie key={movie.id} movie={movie} />
-      ))}
+      ))} */}
     </main>
   );
 }
